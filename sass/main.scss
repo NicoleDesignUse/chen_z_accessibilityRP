@@ -1,0 +1,21 @@
+@import './modules/_reset.scss';
+@import './modules/_var.scss';
+@import './modules/_nav.scss';
+@import './modules/_main.scss';
+@import './modules/_layout.scss';
+
+.hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  

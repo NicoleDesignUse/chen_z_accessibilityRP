@@ -1,3 +1,51 @@
-<h1>{{message}}</h1>
-<h2>{{error.status}}</h2>
-<pre>{{error.stack}}</pre>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CBC V&A</title>
+    <link rel='stylesheet' href='/css/main.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    {{!-- <header>
+      <div class="header div1" id="myHeader">
+        <h2 class="hidden">navigation to different page</h2>
+        <nav class="nav">
+          <div class="logo" >LOGO</div>
+          <div class="btn-group">
+            <a href="/team/video">VIDEOS</a>
+            <a href="/team/audio">AUDIO</a>
+          </div>
+      </nav>
+      </div>
+    </header>
+    <div class="video-display">
+     
+
+    </div> --}}
+    <!-- Navigation bar -->
+    <nav class="nav" role="navigation">
+      <div class="logo">
+        <img src="/images/cbc-logo.png" alt="CBC logo">
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Radio</a></li>
+        <li><a href="/error">TV</a></li>
+      </ul>
+      <form class="search-form" action="#" method="get">
+        <label for="search-input" class="sr-only">Search</label>
+        <input type="text" name="search" id="search-input" placeholder="Search...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </nav>
+
+
+  <script src="/js/main.js"></script>
+  </body>
+</html>
