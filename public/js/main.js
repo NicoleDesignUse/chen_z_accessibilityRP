@@ -1,60 +1,69 @@
-// Get the video player element
-const videoPlayer = document.querySelector('video');
+// Get the media player element
+const player = document.querySelector('audio, video');
 
 // Get the buttons
-    playButton = document.querySelector('.play');
-    pauseButton = document.querySelector('.pause');
-    backButton = document.querySelector('.rewind');
-    forwardButton = document.querySelector('.fast-forward');
-    volumeUpButton = document.querySelector('.volume-up');
-    volumeDownButton = document.querySelector('.volume-down');
-    subtitleButton = document.querySelector('.subtitle');
+const playButton = document.querySelector('.play');
+const pauseButton = document.querySelector('.pause');
+const backButton = document.querySelector('.rewind');
+const forwardButton = document.querySelector('.fast-forward');
+const volumeUpButton = document.querySelector('.volume-up');
+const volumeDownButton = document.querySelector('.volume-down');
+const subtitleButton = document.querySelector('.subtitle');
+const transcriptButton = document.querySelector('.transcript');
+const transcript = document.querySelector('.transcript-content');
 
-// Play and pause the video
+// Play and pause the media
 function togglePlay() {
-  if (videoPlayer.paused) {
-    videoPlayer.play();
+  if (player.paused) {
+    player.play();
     playButton.classList.add('hidden');
     pauseButton.classList.remove('hidden');
   } else {
-    videoPlayer.pause();
+    player.pause();
     playButton.classList.remove('hidden');
     pauseButton.classList.add('hidden');
   }
 }
 
-// Rewind video by 5 seconds
-function rewindVideo() {
-  videoPlayer.currentTime -= 5;
+// Rewind media by 5 seconds
+function rewindMedia() {
+  player.currentTime -= 5;
 }
 
-// Fast forward video by 5 seconds
-function fastForwardVideo() {
-  videoPlayer.currentTime += 5;
+// Fast forward media by 5 seconds
+function fastForwardMedia() {
+  player.currentTime += 5;
 }
 
 // Increase volume by 10%
 function increaseVolume() {
-  if (videoPlayer.volume < 0.9) {
-    videoPlayer.volume += 0.1;
+  if (player.volume < 0.9) {
+    player.volume += 0.1;
   } else {
-    videoPlayer.volume = 1;
+    player.volume = 1;
   }
 }
 
 // Decrease volume by 10%
 function decreaseVolume() {
-  if (videoPlayer.volume > 0.1) {
-    videoPlayer.volume -= 0.1;
+  if (player.volume > 0.1) {
+    player.volume -= 0.1;
   } else {
-    videoPlayer.volume = 0;
+    player.volume = 0;
   }
 }
 
-// Toggle subtitle visibility
+// Toggle subtitle/caption visibility
 function toggleSubtitle() {
-  videoPlayer.textTracks[0].mode = (videoPlayer.textTracks[0].mode == 'hidden') ? 'showing' : 'hidden';
-  subtitleButton.classList.toggle('active');
+  if (player.textTracks[0]) {
+    player.textTracks[0].mode = (player.textTracks[0].mode == 'hidden') ? 'showing' : 'hidden';
+    subtitleButton.classList.toggle('active');
+  }
+}
+
+// Toggle transcript visibility
+function toggleTranscript() {
+  transcript.classList.toggle('hidden');
 }
 
 // Add event listeners only if the button exists
@@ -67,11 +76,11 @@ if (pauseButton) {
 }
 
 if (backButton) {
-  backButton.addEventListener('click', rewindVideo);
+  backButton.addEventListener('click', rewindMedia);
 }
 
 if (forwardButton) {
-  forwardButton.addEventListener('click', fastForwardVideo);
+  forwardButton.addEventListener('click', fastForwardMedia);
 }
 
 if (volumeUpButton) {
@@ -84,4 +93,8 @@ if (volumeDownButton) {
 
 if (subtitleButton) {
   subtitleButton.addEventListener('click', toggleSubtitle);
+}
+
+if (transcriptButton) {
+  transcriptButton.addEventListener('click', toggleTranscript);
 }

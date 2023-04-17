@@ -10,41 +10,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
+    <h1 class="hidden">The CBC New Video Page</h1>
+    <!-- audio player -->
+    <div class="video-player" role="region" aria-label="Audio player">
+      <h2 class="hidden">Audio Player Section</h2>
+      <audio src="/audio/4kill.mp3" controls aria-label="CBC News Audio">
+      <track kind="subtitles" src="/audio/4kill.vtt" srclang="en" label="English">
+  </audio>
+  <div class="controls">
+    <h2 class="hidden">Video Player Controller</h2>
+    <button class="button rewind" aria-label="Rewind 5 seconds">
+      <i class="fa fa-step-backward"></i>
+    </button>
+    <button class="button play" aria-label="Play">
+      <i class="fa fa-play"></i>
+    </button>
+    <button class="button pause hidden" aria-label="Pause">
+      <i class="fa fa-pause"></i>
+    </button>
+    <button class="button fast-forward" aria-label="Fast forward 5 seconds">
+      <i class="fa fa-step-forward"></i>
+    </button>
+    <button class="button volume-up" aria-label="Increase volume">
+      <i class="fa fa-volume-up"></i>
+    </button>
+    <button class="button volume-down" aria-label="Decrease volume">
+      <i class="fa fa-volume-down"></i>
+    </button>
+    <button class="button transcript" aria-label="Toggle transcript">
+      <i class="fa fa-cc">Transcript</i>
+    </button>
+    <button class="button back-to-main" aria-label="back to main page">
+      <a href="/">Back</a>
+    </button>
+  </div>
+  <div class="transcript-content hidden">
+    <h2 class="hidden">Transcript Section</h2>
+  <h3>Transcript</h3>
+  <p>we're tracking another mass shooting in the United States four people were killed and multiple others wounded during an attack in Alabama late last night. CNN's Isabel Rosales, who's in the city of Dadeville where the shooting happened, so Isabelle thank you for joining us. what more can you tell us yeah good afternoon to you. Hillary this is Dadeville a small tight-knit community of just 3 000 people it's just 45 miles Northeast of Montgomery Alabama, and out here in the downtown area, you can see it's still pretty active we have a yellow police tape blocking off the immediate area by this venue behind me. where the shooting happened this brick building is a dance studio we are told by a witness a sweet 16th birthday party was happening here just yesterday after 10 30 p.m we're told by law enforcement is when the shots ring out that shooting occurred we are told by officers that so far four people are confirmed dead and a quote multitude of injuries have happened but very important to hear Hillary there is no Public Safety concern at this time that is what the Alabama Law Enforcement Agency is saying however they are not releasing details as to who this shooter is and whether they have been apprehended I did speak with a pastor here a senior pastor for the church Dr Ben Hayes who's also the chaplain for the police department and a chaplain for the local High School's football team so he's at the intersection of a lot of information here in the community and he told me that he got that call last night from the police chief asking him to go to the hospital where those hurt survivors are being sent to he went there and consoled students who were so frightened by what had happened what they witnessed in front of them and parents of the victims he said that they were just shocked he was taken aback by the lack of Tears he says that they were numb to this situation seemingly unable to process what they witnessed he also told me Hayes told me that he knew one of the victims one of those four victims he says was a football player for the local high school we do know from the superintendent here in the district that they will be bringing in counselors to help these children go through this grieving process us and understand what happened here we do also know that over in the nation's capital the White House tells us that President Biden has been briefed as to this shooting the White House is closely monitoring the situation and has been in touch with local officials and law enforcement offering their support and Hillary if I can also say that this the U.S has suffered at least 162 mass shootings in the first 15 weeks of 2023 that is an average of one and a half mass shootings per day this happening on the same day over in Louisville Kentucky where shots were fired into a crowd at a park killing two and injuring four so so many questions here in this community about what happened here but frankly in the nation overall wondering why this continues to happen day after day hello some staggering numbers Isabel but we do appreciate this update from you thank you for all of this that was CNN's Isabel Rosales for us in Dadeville Alabama.
 
-    <!-- Video player -->
-    <div class="video-player" role="region" aria-label="Video player">
-      <video src="/video/4kill.mp4" controls aria-label="cbc news video">
-        <track kind="subtitles" src="/audio/4kill.vtt" srclang="en" label="English">
-      </video>
-      <div class="controls">
-        <button class="button rewind" aria-label="Rewind 5 seconds">
-          <i class="fa fa-step-backward"></i>
-        </button>
-        <button class="button play" aria-label="Play">
-          <i class="fa fa-play"></i>
-        </button>
-        <button class="button pause hidden" aria-label="Pause">
-          <i class="fa fa-pause"></i>
-        </button>
-        <button class="button fast-forward" aria-label="Fast forward 5 seconds">
-          <i class="fa fa-step-forward"></i>
-        </button>
-        <button class="button volume-up" aria-label="Increase volume">
-          <i class="fa fa-volume-up"></i>
-        </button>
-        <button class="button volume-down" aria-label="Decrease volume">
-          <i class="fa fa-volume-down"></i>
-        </button>
-        <button class="button subtitle" aria-label="Toggle subtitles">
-          <i class="fa fa-cc">Caption</i>
-        </button>
-        <button class="button subtitle" aria-label="back to main page">
-          <a href="/">Back</a>
-        </button>
-      </div>
-    </div>
+</p>
 
-
+  </div>
+</div>
   <script src="/js/main.js"></script>
   </body>
 </html>
