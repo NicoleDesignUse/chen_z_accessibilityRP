@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CBC V&A</title>
+    <link rel='stylesheet' href='/css/main.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+
+    <!-- Video player -->
+    <div class="video-player" role="region" aria-label="Video player">
+      <video src="/video/4kill.mp4" controls aria-label="cbc news video">
+        <track kind="subtitles" src="/audio/4kill.vtt" srclang="en" label="English">
+      </video>
+      <div class="controls">
+        <button class="button rewind" aria-label="Rewind 5 seconds">
+          <i class="fa fa-step-backward"></i>
+        </button>
+        <button class="button play" aria-label="Play">
+          <i class="fa fa-play"></i>
+        </button>
+        <button class="button pause hidden" aria-label="Pause">
+          <i class="fa fa-pause"></i>
+        </button>
+        <button class="button fast-forward" aria-label="Fast forward 5 seconds">
+          <i class="fa fa-step-forward"></i>
+        </button>
+        <button class="button volume-up" aria-label="Increase volume">
+          <i class="fa fa-volume-up"></i>
+        </button>
+        <button class="button volume-down" aria-label="Decrease volume">
+          <i class="fa fa-volume-down"></i>
+        </button>
+        <button class="button subtitle" aria-label="Toggle subtitles">
+          <i class="fa fa-cc">Caption</i>
+        </button>
+        <button class="button subtitle" aria-label="back to main page">
+          <a href="/">Back</a>
+        </button>
+      </div>
+    </div>
+
+
+  <script src="/js/main.js"></script>
+  </body>
+</html>
