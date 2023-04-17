@@ -83,14 +83,10 @@
   margin-right: 10px;
   background-color: #e60000;
   color: #fff;
-  padding: 15px;
+  padding: 20px;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 3px 3px 10px #111;
-}
-
-.button a {
-  color: white;
 }
 
 .button:hover {
@@ -98,45 +94,36 @@
   color: #e60000;
 }
 
-/* Related information */
-.related-info {
-  margin-top: 50px;
+.audioButton {
+  margin-right: 10px;
+  background-color: #e60000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #111;
 }
 
-.related-info h2 {
-  margin-bottom: 20px;
+.audioButton a {
+  color: #fff;
 }
 
-.related-info ul {
-  list-style: none;
+/* transcript section */
+.transcript-content {
+  width: 50%;
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
-.related-info li {
-  margin-bottom: 10px;
-}
-
-.related-info a {
-  color: #1e1e1e;
-  text-decoration: none;
-  border-bottom: 1px solid #1e1e1e;
-}
-
-.related-info a:hover {
+h3 {
   color: #e60000;
-  border-bottom: 1px solid #e60000;
 }
 
 .title {
   font-size: 4em;
   margin: 0.5em;
-}
-
-.buttons-container a {
-  color: white;
-}
-
-.button-container:hover {
-  color: black;
 }
 
 .hidden {

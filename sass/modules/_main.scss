@@ -22,46 +22,43 @@
     margin-right: 10px;
     background-color: #e60000;
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 3px 3px 10px #111;
   }
   
-  .button a {
-    color: white;
-  }
   .button:hover {
     background-color: #fff;
     color: #e60000;
   }
+
+   
+.audioButton {
+  margin-right: 10px;
+  background-color: #e60000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #111;
+}
+
+.audioButton a {
+  color: #fff;
+}
+
   
+  /* transcript section */
   
-  /* Related information */
-  
-  .related-info {
-    margin-top: 50px;
+  .transcript-content {
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.5em;
   }
   
-  .related-info h2 {
-    margin-bottom: 20px;
-  }
-  
-  .related-info ul {
-    list-style: none;
-  }
-  
-  .related-info li {
-    margin-bottom: 10px;
-  }
-  
-  .related-info a {
-    color: #1e1e1e;
-    text-decoration: none;
-    border-bottom: 1px solid #1e1e1e;
-  }
-  
-  .related-info a:hover {
+  h3 {
     color: #e60000;
-    border-bottom: 1px solid #e60000;
   }
